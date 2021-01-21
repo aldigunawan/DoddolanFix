@@ -5,8 +5,8 @@ const App = () => {
   return (
   <View>
     <TextInput style={{borderWidth: 2, borderColor: '#eeeeee'}}/>
-    <Photo/>
     <Text>Hellow World</Text>
+    <Photo/>
     <Gunawan/>
   </View>
   
