@@ -1,29 +1,19 @@
 import React from 'react';
-import {Text, TextInput, View, Image} from 'react-native';
+import {View, ScrollView} from 'react-native';
+import SampleComponent from './Home.js';
+import StylingComponent from './Etalase.js';
+import MateriFlex from './MateriFlex.js';
 
 const App = () => {
   return (
   <View>
-    <TextInput style={{borderWidth: 2, borderColor: '#eeeeee'}}/>
-    <Text>Hellow World</Text>
-    <Photo/>
-    <Gunawan/>
+    <ScrollView>
+      {/* <StylingComponent/>
+      <SampleComponent/> */}
+      <MateriFlex />
+    </ScrollView>
   </View>
-  
-  );
-};
-
-const Gunawan = () => {
-  return <Text>Aldi Gunawan</Text>;
-};
-
-const Photo = () => {
-  return (
-    <Image 
-    source={{uri :'http://placeimg.com/150/150/tech'}}
-    style={{width : 150, height : 150}}
-    />
-  );
+   );
 };
 
 export default App;
